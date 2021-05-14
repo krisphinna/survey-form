@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://fonts.google.com/specimen/Poppins?query=popp"></script>
+</head>
+<body>
+       <header id="header">
+          <h1 id="title" class="text-center">RoyKrizOnline Survey Form</h1>
+          <p id="description">Thank you for taking the time to improve this platform</p>
+       </header>
+
+       <form id="survey-form">
+
+          <div id="form-group">
+             <label id="name-label" for="name">Name:</label>
+             <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+
+          <div id="form-group">
+             <label id="email-label" for="email">Email:</label>
+             <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+
+          <div id="form-group">
+             <label id="number-label" for="number">Age:<span class="idea">(Optional)</span></label>
+             <input id="number" type="number" name="age" min="15" max="50" class="form-control" placeholder="Enter your Age" required>
+          </div>
+
+          <div id="form-group">
+             <p>Which option best describes your current level ?</p>
+
+             <select id="dropdown" name="level" class="form-control" required>
+                <option selected disabled>Select Level</option>
+                <option value="fresher">Fresher</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="professional">Professional</option>
+                <option value="choose-no">Choose No</option>
+                <option value="other">Other</option>
+             </select>
+
+          </div>
+          
+          <div id="form-group">
+             <p>Would you recommend RoyKrizOnline to friends ?</p>
+
+             <label for="definately">
+             <input name="recommended" value="definately" type="radio" class="input-radio" checked>Definately</label>
+
+             <label for="maybe">
+             <input name="recommended" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+             <label for="not-sure">
+             <input name="recommended" value="not-sure" type="radio" class="input-radio">Not Sure</label>
+          </div>
+
+          <div id="form-group">
+             <p>What is your favorite feature of RoyKrizOnline ?</p>
+
+             <select id="favorite" name="favorite"class="form-control" required>
+                 <option selected disabled>Select Option</option>
+                 <option value="opensource">Open Source</option>
+                 <option value="project">Project</option>
+                 <option value="challanges">Challanges</option>
+                 <option value="community">Community</option>
+             </select>  
+          </div>
+        
+          <div id="form-group">
+             <p>What improvement would you like to see ?<span class="idea">(Check all that apply)</span></p>
+
+             <label for="front-end-project">
+             <input name="applied" value="front-end-project" type="checkbox" class="input-checkbox">Front End Project</label>
+
+             <label for="back-end-project">
+             <input name="applied" value="back-end-project" type="checkbox" class="input-checkbox">Back End Project</label>
+
+             <label for="additional-project">
+             <input name="applied" value="additional-project" type="checkbox" class="input-checkbox">Additional Project</label>
+
+             <label for="additional-courses">
+             <input name="applied" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+
+             <label for="community-diversity">
+             <input name="applied" value="community-diversity" type="checkbox" class="input-checkbox">Community Diversity</label>
+
+             <label for="challange">
+             <input name="applied" value="challange" type="checkbox" class="input-checkbox">Challange</label>
+          </div>
+        
+          <div id="form-group">
+             <p>Any suggestions or observation ? </p>
+             <textarea name="suggestion" id="suggestion" class="input-textarea" placeholder="Enter Your Comment Here..."></textarea>
+          </div>
+
+          <div id="form-group">
+             <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+       </form>      
+</body>
+</html>
